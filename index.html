@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himalayan Hearth | Artisanal Dining & Online Ordering — Kathmandu</title>
+  <meta name="description" content="Nepal's premier fine dining and Himalayan spirits restaurant offering authentic wood-fired gastronomy, handcrafted momos, Thakali feasts, and fast online ordering across Kathmandu Valley." />
+  
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Himalayan Hearth | Artisanal Dining & Online Ordering" />
+  <meta property="og:description" content="Wood-fired mountain spices, slow-braised Himalayan meats, and artisanal momos delivered across Kathmandu Valley." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Operational Valley Service Banner -->
+  <div class="operational-banner">
+    <div style="display:flex; align-items:center; gap:0.5rem;">
+      <span class="live-pulse-dot"></span>
+      <span style="font-weight:600; color:var(--text-main);">Open for Online Delivery & Dine-In across Kathmandu Valley</span>
+    </div>
+    <span>•</span>
+    <span>Avg. Delivery: 35–45 Mins</span>
+    <span>•</span>
+    <span>Special Offer: Use code <strong style="color:var(--primary);">HEARTH10</strong> for 10% Off</span>
+    <span>•</span>
+    <a href="track-order.html" style="color:var(--primary); text-decoration:underline;">Track Active Order</a>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Identity -->
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-box">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-name">Himalayan Hearth</span>
+          <span class="brand-tagline">Fine Dining & Himalayan Spirits</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link">Menu & Order</a>
+        <a href="#about" class="nav-link">Heritage</a>
+        <a href="#ambience" class="nav-link">Ambiance</a>
+        <a href="#reservation" class="nav-link">Table Booking</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="admin.html" class="nav-link" style="color: var(--text-dim); font-size:0.8rem;">
+          <span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle;">shield_person</span> Admin
+        </a>
+      </nav>
+
+      <!-- Trailing Action Cluster -->
+      <div class="nav-actions">
+        <!-- Customer Account Link -->
+        <a href="account.html" style="color:var(--text-muted); display:flex; align-items:center; gap:4px; font-size:0.8125rem;" title="Customer Account">
+          <span class="material-symbols-outlined text-primary text-xl">account_circle</span>
+          <span class="hidden md:inline">Account</span>
+        </a>
+
+        <!-- Cart Button with Live Item Badge -->
+        <a href="cart.html" class="cart-btn-trigger" aria-label="View Shopping Cart">
+          <span class="material-symbols-outlined text-xl">shopping_bag</span>
+          <span class="cart-badge-count" style="display:none;">0</span>
+        </a>
+
+        <!-- Reservation CTA -->
+        <a href="#reservation" class="btn-primary">
+          <span>Book a Table</span>
+        </a>
+
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="menu.html" class="mobile-nav-link">Full Menu & Online Ordering</a>
+      <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+      <a href="track-order.html" class="mobile-nav-link">Track Active Order</a>
+      <a href="account.html" class="mobile-nav-link">Customer Account</a>
+      <a href="#about" class="mobile-nav-link">Heritage & Philosophy</a>
+      <a href="#reservation" class="mobile-nav-link">Book a Table</a>
+      <a href="contact.html" class="mobile-nav-link">Contact & Location</a>
+      <a href="admin.html" class="mobile-nav-link" style="color:var(--primary);">Kitchen Admin Portal</a>
+    </div>
+  </header>
+
+  <main style="margin-top: 110px;">
+    <!-- ================= 1. HERO SECTION ================= -->
+    <section class="hero-section" style="position: relative; min-height: 88vh; display: flex; align-items: center; overflow: hidden; padding: 4rem 0;">
+      <!-- Hero Photography -->
+      <div style="position: absolute; inset: 0; z-index: 0;">
+        <img src="/assets/aistudio/Image_1_0ae9160b.jpeg" alt="Himalayan Hearth authentic culinary spread in Kathmandu" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, var(--bg-color) 10%, rgba(22, 19, 17, 0.85) 50%, rgba(22, 19, 17, 0.5) 100%);"></div>
+        <div style="position: absolute; inset: 0; background: linear-gradient(to right, var(--bg-color) 20%, rgba(22, 19, 17, 0.7) 60%, transparent 100%);"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 10;">
+        <div style="max-width: 780px;">
+          <!-- Overhead Badging -->
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1rem; border-radius: var(--radius-full); background: rgba(34, 31, 29, 0.85); border: 1px solid var(--outline-hairline); margin-bottom: 1.5rem;">
+            <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="label-caps" style="color: var(--primary);">Est. 2012 • Durbar Marg, Kathmandu</span>
+          </div>
+
+          <!-- Hero Headline -->
+          <h1 class="hero-headline font-serif" style="font-size: 3.75rem; line-height: 1.15; color: var(--text-main); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 1.5rem;">
+            Authentic Flavors, <br>
+            <span class="text-gold" style="font-style: italic;">Unforgettable Moments</span>
+          </h1>
+
+          <!-- Description -->
+          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 2.25rem; max-width: 650px;">
+            Where centuries-old Himalayan culinary traditions meet contemporary culinary finesse. Savor wood-fired mountain spices, slow-braised Himalayan meats, and handcrafted momos delivered hot across Kathmandu Valley or enjoyed at our sanctuary tables.
+          </p>
+
+          <!-- CTAs -->
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <a href="menu.html" class="btn-primary" style="height: 52px; font-size: 0.8125rem; padding: 0 2rem;">
+              <span>Order Food Online</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+            <a href="#reservation" class="btn-outline" style="height: 52px; font-size: 0.8125rem; padding: 0 2rem;">
+              <span class="material-symbols-outlined text-sm">restaurant</span>
+              <span>Reserve Table</span>
+            </a>
+            <a href="track-order.html" class="btn-outline" style="height: 52px; font-size: 0.8125rem; padding: 0 1.5rem;">
+              <span class="material-symbols-outlined text-sm">fmd_good</span>
+              <span>Track Order</span>
+            </a>
+          </div>
+
+          <!-- Recognition Badging -->
+          <div style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(30, 27, 25, 0.75); padding: 0.6rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--outline-hairline); font-size: 0.8125rem; color: var(--text-dim);">
+            <span class="live-pulse-dot"></span>
+            <span>Dinner Service: 5:30 PM – 11:00 PM</span>
+            <span style="color: var(--outline);">•</span>
+            <span style="color: var(--primary); font-weight: 600;">Michelin Guide Recommended 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. FEATURED FOOD CATEGORIES ================= -->
+    <section style="padding: 5rem 0; background-color: var(--bg-dim); border-top: 1px solid var(--outline-hairline); border-bottom: 1px solid var(--outline-hairline);">
+      <div class="container">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto 3rem;">
+          <span class="label-caps" style="color: var(--primary);">Curated Gastronomy</span>
+          <h2 class="font-serif" style="font-size: 2.25rem; color: var(--text-main); margin-top: 0.5rem;">Explore Food Categories</h2>
+          <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 0.5rem;">Choose from hand-pleated momos, charcoal sekuwa, royal Thakali feasts, and valley street noodles.</p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Cat 1: Himalayan Signatures -->
+          <a href="menu.html?category=himalayan" class="hearth-card" style="padding: 1.5rem; text-align: center; display:flex; flex-direction:column; align-items:center;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--surface-high); border: 1px solid var(--outline-hairline); display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:1rem;">
+              <span class="material-symbols-outlined text-2xl">star</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.125rem; color: var(--text-main); margin-bottom: 0.25rem;">Himalayan Signatures</h3>
+            <p style="font-size: 0.75rem; color: var(--text-dim);">Truffle momos, braised khasi, glacial trout</p>
+          </a>
+
+          <!-- Cat 2: Momo & Dumplings -->
+          <a href="menu.html?category=momo" class="hearth-card" style="padding: 1.5rem; text-align: center; display:flex; flex-direction:column; align-items:center;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--surface-high); border: 1px solid var(--outline-hairline); display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:1rem;">
+              <span class="material-symbols-outlined text-2xl">lunch_dining</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.125rem; color: var(--text-main); margin-bottom: 0.25rem;">Momo & Dumplings</h3>
+            <p style="font-size: 0.75rem; color: var(--text-dim);">Steamed buff, jhol momo, crispy C-momo</p>
+          </a>
+
+          <!-- Cat 3: Thakali & Khana Sets -->
+          <a href="menu.html?category=thakali" class="hearth-card" style="padding: 1.5rem; text-align: center; display:flex; flex-direction:column; align-items:center;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--surface-high); border: 1px solid var(--outline-hairline); display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:1rem;">
+              <span class="material-symbols-outlined text-2xl">dinner_dining</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.125rem; color: var(--text-main); margin-bottom: 0.25rem;">Thakali & Khana Sets</h3>
+            <p style="font-size: 0.75rem; color: var(--text-dim);">Royal veg thali, Mustang khasi set, Jumla rice</p>
+          </a>
+
+          <!-- Cat 4: Wood-Fired & Sekuwa -->
+          <a href="menu.html?category=woodfired" class="hearth-card" style="padding: 1.5rem; text-align: center; display:flex; flex-direction:column; align-items:center;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--surface-high); border: 1px solid var(--outline-hairline); display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:1rem;">
+              <span class="material-symbols-outlined text-2xl">outdoor_grill</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.125rem; color: var(--text-main); margin-bottom: 0.25rem;">Wood-Fired & Sekuwa</h3>
+            <p style="font-size: 0.75rem; color: var(--text-dim);">Jimbu chicken sekuwa, butter chicken, choila</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. POPULAR MASTERPIECES (DIRECT ADD TO CART) ================= -->
+    <section style="padding: 6rem 0;" id="menu">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem; margin-bottom: 3rem;">
+          <div>
+            <span class="label-caps" style="color: var(--primary);">Master Culinary Selections</span>
+            <h2 class="font-serif" style="font-size: 2.5rem; color: var(--text-main); margin-top: 0.5rem;">Popular Hearth Dishes</h2>
+            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 0.25rem;">Every dish is prepared fresh upon ordering with authentic Nepalese spices.</p>
+          </div>
+          <a href="menu.html" class="btn-outline">
+            <span>View Complete Menu (20+ Items)</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Dishes Grid (Cards from storage with instant add to cart) -->
+        <div class="dishes-grid" id="homepageDishesGrid">
+          <!-- Injected via JavaScript from Storage -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. SPECIAL OFFERS & COUPONS BANNER ================= -->
+    <section style="padding: 3rem 0; background: linear-gradient(90deg, #1e1b19, #2d2927); border-top: 1px solid var(--outline-hairline); border-bottom: 1px solid var(--outline-hairline);">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
+          <div style="display:flex; align-items:center; gap:1.5rem;">
+            <div style="width: 64px; height: 64px; border-radius: 8px; background: var(--surface-container); border: 1px solid var(--primary); display:flex; align-items:center; justify-content:center; color:var(--primary); font-size:2rem; flex-shrink:0;">
+              <span class="material-symbols-outlined text-3xl">loyalty</span>
+            </div>
+            <div>
+              <span class="label-caps" style="color:var(--primary);">Himalayan Feast Discount</span>
+              <h3 class="font-serif" style="font-size:1.5rem; color:var(--text-main); margin:0.25rem 0;">Get 10% Off Your Online Order</h3>
+              <p style="font-size:0.875rem; color:var(--text-muted);">Apply coupon code <strong style="color:var(--primary); letter-spacing:0.05em;">HEARTH10</strong> at checkout for all valley deliveries above Rs. 1,000.</p>
+            </div>
+          </div>
+          <div style="display:flex; gap:1rem;">
+            <a href="menu.html" class="btn-primary">Apply & Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. HERITAGE & PHILOSOPHY ================= -->
+    <section style="padding: 6rem 0; background-color: var(--surface-container-lowest);" id="about">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" class="checkout-layout">
+          <div>
+            <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--outline-hairline); box-shadow: var(--shadow-card);">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy5apr81oCpB14_kejCfNuZQm-fm56Sp2JvmxaNFDQnAQMtNw5VW7o5ISZr-QIMvQx-y9jjMUuxOyvB85xeDIiKtTwwvFDNASdcH84Z0ufp_SDoU59P8zk-_5zNi1nNoDRPntm-j9ZkUXSC6h2Cd92iA3_5Y37bIvoNjUL3_Njl-ItfkmJknBSA24Rvth-YeSi8oBEK1U9UvAEjz5P3I49VQ1Q6vVQQYY0NIV5unsEL6-htxGBINH6" alt="Master chef preparing slow-braised Himalayan dishes" style="width:100%; height:460px; object-fit:cover;">
+              <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background: rgba(34, 31, 29, 0.9); padding: 1.25rem; border-radius: 4px; border: 1px solid var(--outline-hairline);">
+                <p class="font-serif" style="font-style: italic; font-size: 0.9375rem; color: var(--text-main); margin-bottom: 0.4rem;">
+                  "Our hearth burns with reverence for Mustang herbs, valley heritage, and ancient slow-clay heat."
+                </p>
+                <div class="label-caps" style="color: var(--primary); font-size: 0.7rem;">— Executive Chef Tenzing Norbu</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="label-caps" style="color: var(--primary);">Our Heritage & Soul</span>
+            <h2 class="font-serif" style="font-size: 2.5rem; color: var(--text-main); margin: 0.5rem 0 1.5rem; line-height: 1.2;">
+              The Alchemical Hearth of Kathmandu
+            </h2>
+            <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+              Founded within the storied shadow of the Himalayas, Himalayan Hearth resurrects forgotten Newari, Thakali, and Sherpa culinary arts. We source pristine organic ingredients directly from the cold mountain soils of Mustang, Dolpo, and Jumla.
+            </p>
+            <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 2rem;">
+              Every dish is infused with wild-foraged <em>Jimbu</em>, high-altitude Timur pepper, stone-pressed mustard oil, and indigenous heirloom grains cooked slowly in hand-beaten Newari brass vessels.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div style="padding: 1rem; background: var(--surface-container); border: 1px solid var(--outline-hairline); border-radius: 4px;">
+                <div style="display:flex; align-items:center; gap:0.5rem; color:var(--primary); font-weight:600; font-size:0.9375rem; margin-bottom:0.25rem;">
+                  <span class="material-symbols-outlined">eco</span>
+                  <span>Fresh Ingredients</span>
+                </div>
+                <p style="font-size:0.75rem; color:var(--text-dim);">Direct from high-altitude organic cooperatives in Mustang & Dolpo.</p>
+              </div>
+
+              <div style="padding: 1rem; background: var(--surface-container); border: 1px solid var(--outline-hairline); border-radius: 4px;">
+                <div style="display:flex; align-items:center; gap:0.5rem; color:var(--primary); font-weight:600; font-size:0.9375rem; margin-bottom:0.25rem;">
+                  <span class="material-symbols-outlined">outdoor_grill</span>
+                  <span>Wood Embers</span>
+                </div>
+                <p style="font-size:0.75rem; color:var(--text-dim);">Centuries-old slow earthenware and clay tandoor recipes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. INTIMATE HEARTH AMBIANCE ================= -->
+    <section style="padding: 6rem 0;" id="ambience">
+      <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem;">
+          <span class="label-caps" style="color: var(--primary);">Atmosphere & Spirit</span>
+          <h2 class="font-serif" style="font-size: 2.25rem; color: var(--text-main); margin-top: 0.5rem;">Intimate Hearth Ambiance</h2>
+          <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 0.5rem;">
+            Step away from Kathmandu's energetic streets into a sanctuary of hand-carved teakwood, shimmering copper vessels, and glowing hearths.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem;" class="checkout-layout">
+          <div style="position: relative; border-radius: 8px; overflow: hidden; height: 380px; border: 1px solid var(--outline-hairline);">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3InRJE-OS8s5FoUlq5j81Pl2ZQyoNMrvA9e29sxUlBA_wLmamrm6Frr9Aw5oCXx05SagThq2W0zkkr0qX-j7j_GPQb3dh1Ut5vV_ItJtS0a-Wrcv5aSdQ-6NIA0iNqotvBW7sMkEKyzVom5jbvuwp2yyXKt2VcQxdWrCi4-S_LAnNmWW2TgxqzpdSBx0XUym7LgYNVGJ39j8Kk4yC5yF4CYwmaVwpueoCWUzCaqAIKrVvMxg8Xk45" alt="Grand Hearth Salon dining room" style="width:100%; height:100%; object-fit:cover;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(to top, rgba(16,14,12,0.95), transparent);">
+              <h4 class="font-serif" style="font-size: 1.25rem; color: var(--text-main);">The Grand Hearth Salon</h4>
+              <p style="font-size: 0.8125rem; color: var(--text-dim);">Centerpiece clay oven counter with intimate tables dressed in handloom linens.</p>
+            </div>
+          </div>
+
+          <div style="position: relative; border-radius: 8px; overflow: hidden; height: 380px; border: 1px solid var(--outline-hairline);">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhs-ijXswXgvaa3HIHEXC2AQ988s2NKr7TnVVQvLB__1QXu0-lzY7hFu8uQutTfoSKFJQhwYfQpp8Mkem9L-qVtzTv8kOSa0vFxuLLeyVKo-Rn3i3wLxZl6L7vVZ0Q7c_1b8qBM3XRR2yS9b-yTyyketCgBq1ppPjRRgnXWy3AmJCnu2ZPIXZ3YQZdQAKjDqdOdOjaoPtkuZRJ6ODWzwXhTEAVsUR1lgWHZYyyQu83aYGVinB8lPpx" alt="Mandala Private Chamber dining alcove" style="width:100%; height:100%; object-fit:cover;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(to top, rgba(16,14,12,0.95), transparent);">
+              <h4 class="font-serif" style="font-size: 1.25rem; color: var(--text-main);">Mandala Private Chamber</h4>
+              <p style="font-size: 0.8125rem; color: var(--text-dim);">Exclusive celebratory alcoves accommodating up to 14 guests.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. TABLE RESERVATION ENGINE ================= -->
+    <section style="padding: 6rem 0; background-color: var(--surface-container);" id="reservation">
+      <div class="container" style="max-width: 900px;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+          <span class="label-caps" style="color: var(--primary);">Reserve An Experience</span>
+          <h2 class="font-serif" style="font-size: 2.25rem; color: var(--text-main); margin-top: 0.5rem;">Book Your Table</h2>
+          <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 0.5rem;">
+            For intimate dining or special celebrations at Durbar Marg, reservations are recommended at least 24 hours in advance.
+          </p>
+        </div>
+
+        <div class="hearth-card" style="padding: 2.5rem;">
+          <form id="reservationForm">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem;" class="categories-grid">
+              <!-- Date -->
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="resDate">Date</label>
+                <input type="date" id="resDate" class="form-control" required>
+              </div>
+
+              <!-- Time -->
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="resTime">Time Slot</label>
+                <select id="resTime" class="form-control" required>
+                  <option value="17:30">5:30 PM (Dinner)</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:30" selected>7:30 PM (Prime)</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:30">9:30 PM</option>
+                </select>
+              </div>
+
+              <!-- Guests -->
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="resGuests">Guests</label>
+                <select id="resGuests" class="form-control" required>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="8">8+ Guests (Private Salon)</option>
+                </select>
+              </div>
+
+              <!-- Seating -->
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="resSeating">Seating</label>
+                <select id="resSeating" class="form-control">
+                  <option value="main" selected>Main Hearth Salon</option>
+                  <option value="counter">Chef's Hearth Counter</option>
+                  <option value="salon">Mandala Private Chamber</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="guestName">Full Name</label>
+                <input type="text" id="guestName" class="form-control" placeholder="e.g. Maya Shrestha" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="guestContact">Nepal Contact (Phone / Email)</label>
+                <input type="text" id="guestContact" class="form-control" placeholder="+977 9801234567 or email" required>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+              <div style="font-size:0.75rem; color:var(--text-dim); display:flex; align-items:center; gap:0.4rem;">
+                <span class="material-symbols-outlined text-primary text-sm">verified</span>
+                <span>Immediate SMS & Concierge Phone Confirmation</span>
+              </div>
+              <button type="submit" class="btn-primary">
+                <span>Confirm Table Request</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. TESTIMONIALS ================= -->
+    <section style="padding: 6rem 0; background-color: var(--bg-dim);">
+      <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem;">
+          <span class="label-caps" style="color: var(--primary);">Distinguished Praise</span>
+          <h2 class="font-serif" style="font-size: 2.25rem; color: var(--text-main); margin-top: 0.5rem;">Patron Accolades</h2>
+        </div>
+
+        <div class="dishes-grid">
+          <div class="hearth-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="color: var(--primary); margin-bottom: 1rem; letter-spacing: 2px;">★★★★★</div>
+              <p class="font-serif" style="font-style: italic; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+                "The Truffle Momos and Khasi stew in the brass handi redefine Himalayan gastronomy. Unquestionably Kathmandu's most transcendent dining table."
+              </p>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-main); font-size: 0.9375rem;">Elena Rostova</div>
+              <div class="label-caps" style="color: var(--primary); font-size: 0.7rem;">Culinary Critic, Epicurean Voyage</div>
+            </div>
+          </div>
+
+          <div class="hearth-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; border-top: 3px solid var(--primary);">
+            <div>
+              <div style="color: var(--primary); margin-bottom: 1rem; letter-spacing: 2px;">★★★★★</div>
+              <p class="font-serif" style="font-style: italic; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+                "An evening steeped in soul, candlelight, and ancient spice. The pairing of indigenous high-mountain tea with the royal thali was pure revelation."
+              </p>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-main); font-size: 0.9375rem;">Sir Julian Vance</div>
+              <div class="label-caps" style="color: var(--primary); font-size: 0.7rem;">Gastronomy Guild London</div>
+            </div>
+          </div>
+
+          <div class="hearth-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="color: var(--primary); margin-bottom: 1rem; letter-spacing: 2px;">★★★★★</div>
+              <p class="font-serif" style="font-style: italic; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+                "Authenticity executed with Michelin-level precision. The smoky Mustang trout and the house aged Aila spirits are legendary."
+              </p>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-main); font-size: 0.9375rem;">Pooja & Rajesh Thapa</div>
+              <div class="label-caps" style="color: var(--primary); font-size: 0.7rem;">Heritage Patrons, Kathmandu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div>
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon-box">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            </div>
+            <div class="brand-text-col">
+              <span class="brand-name">Himalayan Hearth</span>
+              <span class="brand-tagline">Durbar Marg • Kathmandu</span>
+            </div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+            Kathmandu's celebrated temple of artisanal mountain gastronomy. Preserving heirloom seed lines, clay-pot techniques, and fireside rituals.
+          </p>
+          <div style="font-size: 0.8125rem; color: var(--text-dim);">
+            Currency: <strong>NPR (Rs.)</strong> • Region: <strong>Nepal</strong>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <div class="footer-col-title">Online Platform</div>
+          <ul class="footer-links-list">
+            <li><a href="menu.html">Artisanal Food Menu</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout & Payment</a></li>
+            <li><a href="track-order.html">Track Active Order</a></li>
+            <li><a href="account.html">Patron Account</a></li>
+            <li><a href="admin.html">Kitchen Administration</a></li>
+          </ul>
+        </div>
+
+        <!-- Dining & Heritage -->
+        <div>
+          <div class="footer-col-title">Sanctuary Hours</div>
+          <div style="font-size: 0.8125rem; color: var(--text-dim); line-height: 1.7;">
+            <div><strong>Lunch Service:</strong> 11:30 AM – 3:30 PM</div>
+            <div><strong>Dinner Service:</strong> 5:30 PM – 11:00 PM</div>
+            <div><strong>Hearth Bar:</strong> Open until Midnight</div>
+            <div style="margin-top: 0.75rem; color: var(--primary);">Tuesday – Sunday</div>
+          </div>
+        </div>
+
+        <!-- Contact & Location -->
+        <div>
+          <div class="footer-col-title">Reservations & Concierge</div>
+          <div style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            <div>Durbar Marg Heritage Quarter</div>
+            <div>Kathmandu, Bagmati 44600, Nepal</div>
+            <div style="margin-top: 0.5rem;">
+              <a href="tel:+97714412345" style="color: var(--primary); font-weight:600;">+977 1 4412345</a>
+            </div>
+            <div>concierge@himalayanhearth.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Himalayan Hearth Pvt. Ltd. All Rights Reserved. Crafted with Himalayan Soul in Kathmandu, Nepal.</p>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="#">Instagram</a>
+          <a href="#">Michelin Guide</a>
+          <a href="#">TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="/js/main.js"></script>
+  <script type="module">
+    import { getMenuItems, formatNPR, addToCart } from '/js/storage.js';
+    import { updateCartBadges, showToast, openFoodDetailsModal } from '/js/main.js';
+
+    // Populate Popular dishes on homepage
+    const grid = document.getElementById('homepageDishesGrid');
+    if (grid) {
+      const items = getMenuItems().slice(0, 6);
+      grid.innerHTML = items.map(dish => `
+        <div class="hearth-card food-card">
+          <div class="food-card-img-wrap" style="cursor: pointer;" onclick="window.openDishModal('${dish.id}')">
+            <img src="${dish.image}" alt="${dish.name}" loading="lazy">
+            <span class="${dish.isVeg ? 'badge-veg' : 'badge-nonveg'}">
+              <span style="font-size:8px;">●</span> ${dish.isVeg ? 'VEG' : 'NON-VEG'}
+            </span>
+            ${dish.isChefSpecial ? `<span class="food-badge" style="background:rgba(123,47,13,0.9); color:var(--on-secondary-container);">Chef Special</span>` : (dish.isPopular ? `<span class="food-badge">Popular</span>` : '')}
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-header">
+              <h3 class="food-title" style="cursor:pointer;" onclick="window.openDishModal('${dish.id}')">${dish.name}</h3>
+              <div class="food-price">${formatNPR(dish.price)}</div>
+            </div>
+            <div style="font-size: 0.75rem; color: var(--primary); font-family: var(--font-serif); margin-bottom: 0.35rem;">
+              ${dish.nepaliName || ''}
+            </div>
+            <p class="food-desc">${dish.description}</p>
+            <div class="food-card-footer">
+              <div style="font-size: 0.75rem; color: var(--text-dim); display:flex; align-items:center; gap:4px;">
+                <span class="material-symbols-outlined" style="font-size:15px; color:var(--primary);">local_fire_department</span>
+                <span>${dish.spiceLevel || 'Chef Curated'}</span>
+              </div>
+              <div style="display:flex; gap:0.5rem;">
+                <button class="btn-outline btn-sm" onclick="window.openDishModal('${dish.id}')">
+                  Details
+                </button>
+                <button class="btn-primary btn-sm hp-add-btn" data-id="${dish.id}">
+                  + Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      window.openDishModal = (id) => openFoodDetailsModal(id);
+
+      grid.querySelectorAll('.hp-add-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const id = btn.getAttribute('data-id');
+          const d = items.find(i => i.id === id);
+          if (d) {
+            addToCart(d, 1);
+            updateCartBadges();
+            showToast(`Added ${d.name} to cart!`, 'success');
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>

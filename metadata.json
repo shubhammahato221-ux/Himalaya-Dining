@@ -1,0 +1,6 @@
+{
+  "name": "Himalayan Hearth - Artisanal Dining & Online Ordering",
+  "description": "Nepal's premier fine dining and Himalayan spirits restaurant offering authentic wood-fired gastronomy, handcrafted momos, Thakali feasts, and fast online ordering across Kathmandu Valley with NPR pricing and local payment support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

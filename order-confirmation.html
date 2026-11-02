@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed | Himalayan Hearth</title>
+  <meta name="description" content="Your Himalayan Hearth order has been confirmed by our kitchen." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Operational Banner -->
+  <div class="operational-banner">
+    <div style="display:flex; align-items:center; gap:0.5rem;">
+      <span class="live-pulse-dot"></span>
+      <span style="font-weight:600; color:var(--text-main);">Order Transmitted to Durbar Marg Kitchen Sanctuary</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-box">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-name">Himalayan Hearth</span>
+          <span class="brand-tagline">Fine Dining & Himalayan Spirits</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="track-order.html" class="nav-link">Track Order</a>
+        <a href="account.html" class="nav-link">Account</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="menu.html" class="btn-primary btn-sm">
+          <span>Order More</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main style="margin-top: 130px; padding-bottom: 6rem;">
+    <div class="container" id="confirmationContainer">
+      <!-- Rendered dynamically by /js/orders.js -->
+      <div style="text-align: center; padding: 4rem;">
+        <span class="material-symbols-outlined text-primary text-3xl" style="animation: spin 1s infinite linear;">sync</span>
+        <p style="color:var(--text-muted); margin-top:1rem;">Retrieving order receipt...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Himalayan Hearth Pvt. Ltd. Kathmandu, Nepal.</p>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="track-order.html">Track Order</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/orders.js"></script>
+</body>
+</html>

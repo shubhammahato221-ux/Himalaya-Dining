@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisanal Food Menu | Himalayan Hearth — Kathmandu</title>
+  <meta name="description" content="Browse our authentic Himalayan menu in Kathmandu. Handcrafted momos, slow-cooked goat curry, royal Thakali thali, wood-fired sekuwa, and mountain spirits." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Operational Banner -->
+  <div class="operational-banner">
+    <div style="display:flex; align-items:center; gap:0.5rem;">
+      <span class="live-pulse-dot"></span>
+      <span style="font-weight:600; color:var(--text-main);">Live Hearth Delivery in Kathmandu Valley</span>
+    </div>
+    <span>•</span>
+    <span>Use Code <strong style="color:var(--primary);">HEARTH10</strong> for 10% Off</span>
+    <span>•</span>
+    <span>Prices in NPR (Nepalese Rupees)</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-box">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-name">Himalayan Hearth</span>
+          <span class="brand-tagline">Fine Dining & Himalayan Spirits</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu & Order</a>
+        <a href="index.html#about" class="nav-link">Heritage</a>
+        <a href="index.html#reservation" class="nav-link">Table Booking</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="account.html" style="color:var(--text-muted); display:flex; align-items:center; gap:4px; font-size:0.8125rem;">
+          <span class="material-symbols-outlined text-primary text-xl">account_circle</span>
+          <span class="hidden md:inline">Account</span>
+        </a>
+
+        <a href="cart.html" class="cart-btn-trigger" aria-label="Cart">
+          <span class="material-symbols-outlined text-xl">shopping_bag</span>
+          <span class="cart-badge-count" style="display:none;">0</span>
+        </a>
+
+        <a href="checkout.html" class="btn-primary btn-sm">
+          <span>Checkout</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="menu.html" class="mobile-nav-link active">Full Menu & Ordering</a>
+      <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+      <a href="checkout.html" class="mobile-nav-link">Checkout</a>
+      <a href="track-order.html" class="mobile-nav-link">Track Active Order</a>
+      <a href="account.html" class="mobile-nav-link">My Account</a>
+      <a href="contact.html" class="mobile-nav-link">Contact & Location</a>
+    </div>
+  </header>
+
+  <main style="margin-top: 130px; padding-bottom: 6rem;">
+    <div class="container">
+      <!-- Section Title & Search Header -->
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+        <span class="label-caps" style="color: var(--primary);">Sensory Excellence • Kathmandu</span>
+        <h1 class="font-serif" style="font-size: 2.75rem; color: var(--text-main); margin: 0.5rem 0 1rem;">
+          Our Artisanal Menu
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6;">
+          Handcrafted mountain flavors prepared with wild Jimbu, timur pepper, stone-pressed mustard oil, and authentic wood-fire techniques.
+        </p>
+
+        <!-- Search Input Bar -->
+        <div style="margin-top: 2rem; position: relative; max-width: 540px; margin-left: auto; margin-right: auto;">
+          <input type="text" id="menuSearchInput" class="form-control" placeholder="Search momos, thali, sekuwa, chowmein, timur..." style="height: 50px; padding-left: 48px; border-radius: var(--radius-full);">
+          <span class="material-symbols-outlined text-primary" style="position: absolute; left: 16px; top: 13px; font-size: 24px;">search</span>
+        </div>
+      </div>
+
+      <!-- Controls Row: Category Filter Pills -->
+      <div class="filter-bar">
+        <button class="filter-pill active" data-category="all">All Dishes</button>
+        <button class="filter-pill" data-category="himalayan">Himalayan Signatures</button>
+        <button class="filter-pill" data-category="momo">Momo & Dumplings</button>
+        <button class="filter-pill" data-category="thakali">Thakali & Khana</button>
+        <button class="filter-pill" data-category="woodfired">Wood-Fired & Sekuwa</button>
+        <button class="filter-pill" data-category="noodles">Chowmein & Noodles</button>
+        <button class="filter-pill" data-category="rice">Biryani & Grains</button>
+        <button class="filter-pill" data-category="snacks">Khaja & Snacks</button>
+        <button class="filter-pill" data-category="dessert">Desserts</button>
+        <button class="filter-pill" data-category="beverage">Beverages & Spirits</button>
+      </div>
+
+      <!-- Secondary Filter & Sort Control Bar -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; padding: 0.75rem 1.25rem; background: var(--surface-container); border: 1px solid var(--outline-hairline); border-radius: 6px;">
+        <!-- Dietary Filter Radios -->
+        <div style="display: flex; align-items: center; gap: 1.25rem; font-size: 0.8125rem;">
+          <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.75rem;">Dietary:</span>
+          <label style="display:flex; align-items:center; gap:0.35rem; cursor:pointer;">
+            <input type="radio" name="dietFilter" value="all" checked style="accent-color:var(--primary);">
+            <span>All Items</span>
+          </label>
+          <label style="display:flex; align-items:center; gap:0.35rem; cursor:pointer; color:#10b981;">
+            <input type="radio" name="dietFilter" value="veg" style="accent-color:#10b981;">
+            <span>Veg Only</span>
+          </label>
+          <label style="display:flex; align-items:center; gap:0.35rem; cursor:pointer; color:#ef4444;">
+            <input type="radio" name="dietFilter" value="nonveg" style="accent-color:#ef4444;">
+            <span>Non-Veg Only</span>
+          </label>
+        </div>
+
+        <!-- Sort Select & Counter -->
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span id="menuItemCount" style="font-size: 0.8125rem; color: var(--text-dim);">Loading dishes...</span>
+          <select id="menuSortSelect" class="form-control" style="width: auto; padding: 0.4rem 0.85rem; font-size: 0.8125rem; height: 34px;">
+            <option value="default">Sort: Recommended</option>
+            <option value="popular">Most Popular</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Alphabetical (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dishes Bento/Grid Container -->
+      <div class="dishes-grid" id="menuDishesGrid">
+        <!-- Rendered via /js/menu.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Himalayan Hearth Pvt. Ltd. Kathmandu, Nepal. All Menu Prices in NPR (Rs.).</p>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="cart.html">View Cart</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="track-order.html">Track Order</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* ===================================================================
+   HIMALAYAN HEARTH — RESPONSIVE STYLES
+   Breakpoints: Mobile (<= 480px), Tablet (<= 768px), Laptop (<= 1024px)
+   =================================================================== */
+
+/* Tablet & Mobile Nav */
+.mobile-menu-btn {
+  display: none;
+  color: var(--primary);
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--outline-hairline);
+  background: var(--surface-container);
+}
+
+.mobile-nav-drawer {
+  display: none;
+  background-color: var(--surface-high);
+  border-bottom: 1px solid var(--outline-hairline);
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-nav-drawer.active {
+  display: flex;
+}
+
+.mobile-nav-link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.5rem 0.75rem;
+  border-left: 2px solid transparent;
+}
+
+.mobile-nav-link.active, .mobile-nav-link:hover {
+  color: var(--primary);
+  border-left-color: var(--primary);
+  background: rgba(249, 187, 97, 0.05);
+}
+
+/* Grids for food dishes */
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Category Grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Checkout & Cart 2-column layout */
+.checkout-layout, .cart-layout {
+  display: grid;
+  grid-template-columns: 1.8fr 1.2fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Order Tracking timeline */
+.tracking-stepper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 3rem 0;
+}
+
+.tracking-stepper::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: var(--outline-hairline);
+  z-index: 1;
+}
+
+.tracking-progress-fill {
+  position: absolute;
+  top: 24px;
+  left: 10%;
+  height: 2px;
+  background-color: var(--primary);
+  z-index: 2;
+  transition: width 0.5s ease;
+}
+
+.step-item {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.step-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--surface);
+  border: 2px solid var(--outline-hairline);
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.step-item.active .step-icon-wrap {
+  background-color: var(--primary-container);
+  border-color: var(--primary);
+  color: var(--on-primary-fixed);
+  box-shadow: var(--shadow-gold);
+}
+
+.step-item.completed .step-icon-wrap {
+  background-color: var(--surface-container);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.step-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.step-desc {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .dishes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  
+  .checkout-layout, .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-actions .btn-primary {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+  
+  .dishes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero-headline {
+    font-size: 2.25rem !important;
+    line-height: 2.75rem !important;
+  }
+  
+  .tracking-stepper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+  }
+  
+  .tracking-stepper::before {
+    top: 24px;
+    bottom: 24px;
+    left: 48px;
+    width: 2px;
+    height: auto;
+    right: auto;
+  }
+  
+  .tracking-progress-fill {
+    top: 24px;
+    left: 48px;
+    width: 2px;
+    height: 0;
+    transition: height 0.5s ease;
+  }
+  
+  .step-item {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 1.25rem;
+  }
+  
+  .step-icon-wrap {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cart-drawer {
+    max-width: 100%;
+  }
+}

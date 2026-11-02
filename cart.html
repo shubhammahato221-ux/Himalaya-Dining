@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Himalayan Hearth</title>
+  <meta name="description" content="Review your order items, apply promotional discount coupons, and proceed to checkout." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Operational Banner -->
+  <div class="operational-banner">
+    <div style="display:flex; align-items:center; gap:0.5rem;">
+      <span class="live-pulse-dot"></span>
+      <span style="font-weight:600; color:var(--text-main);">Free Delivery on all orders above Rs. 2,000 across Kathmandu Valley</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-box">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-name">Himalayan Hearth</span>
+          <span class="brand-tagline">Fine Dining & Himalayan Spirits</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu & Order</a>
+        <a href="index.html#reservation" class="nav-link">Table Booking</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="menu.html" class="btn-outline btn-sm">
+          <span>+ Add More Food</span>
+        </a>
+        <a href="checkout.html" class="btn-primary btn-sm">
+          <span>Checkout</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main style="margin-top: 130px; padding-bottom: 6rem;">
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <span class="label-caps" style="color:var(--primary);">Hearth Feast Basket</span>
+        <h1 class="font-serif" style="font-size: 2.5rem; color: var(--text-main); margin-top: 0.25rem;">Shopping Cart</h1>
+      </div>
+
+      <div id="cartPageContainer">
+        <!-- Rendered dynamically by /js/cart.js -->
+        <div style="text-align: center; padding: 4rem;">
+          <span class="material-symbols-outlined text-primary text-3xl" style="animation: spin 1s infinite linear;">sync</span>
+          <p style="color:var(--text-muted); margin-top:1rem;">Calculating cart totals...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Himalayan Hearth Pvt. Ltd. Kathmandu, Nepal. All calculations in NPR.</p>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="menu.html">Explore Menu</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="track-order.html">Track Order</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/cart.js"></script>
+</body>
+</html>
